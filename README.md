@@ -39,3 +39,10 @@ Requires Node 20+ (22 recommended) and Python 3.12.
 
 ## Editing content
 Copy and page templates live in `build.py`. Edit, run `npm run build`, commit `public/` with it. Rules: no em dashes, no banned phrases, no claim that a person at NYNZ reviews changes, only tested integrations named, every figure labelled as a test result or assumption. See docs/process-wording.md.
+
+## Design system and logo (redesign branch)
+- One sans (IBM Plex Sans) plus mono, type scale 1.25 from 16px, 4px spacing scale, 12-column grid, 1200px max. Tokens are at the top of `public/styles.css`.
+- Navy #0A1A2F, orange #FF5A1F (primary action and accents), link and eyebrow text on light uses Ember #B8400F for AA contrast.
+- Product screens on the site are HTML/CSS/SVG illustrations, each labelled "Example data".
+- Logo: `public/img/nynz-logo-*.svg` and `public/favicon.svg` are retraced from `brand/logo-concept-orbit-FINAL.jpg` (the only copy of the approved ORBIT artwork). Regenerate with `scripts/logo/trace.py` (needs a venv with potracer, opencv-python-headless, numpy, pillow) then `python3 scripts/logo/build_logo.py` and `node scripts/assets.cjs`. If a vector master exists, replace the traced paths with it.
+- Mobile menu is progressive enhancement (`public/nav.js`, same-origin). FAQ uses `<details>` and needs no JavaScript.

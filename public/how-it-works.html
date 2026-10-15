@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>How it works | NYNZ</title>
-<meta name="description" content="How NYNZ finds, checks, publishes and reports catalogue and feed fixes for Shopify stores, and where your approval comes in.">
+<meta name="description" content="How the free read-only health audit works, what the detailed audit adds, and how monitoring (early access) keeps every change behind your approval.">
 <link rel="canonical" href="https://nynz.in/how-it-works">
-<meta property="og:type" content="website"><meta property="og:site_name" content="NYNZ">
-<meta property="og:title" content="How it works | NYNZ"><meta property="og:description" content="How NYNZ finds, checks, publishes and reports catalogue and feed fixes for Shopify stores, and where your approval comes in.">
+<meta property="og:type" content="website"><meta property="og:site_name" content="NYNZ"><meta property="og:url" content="https://nynz.in/how-it-works">
+<meta property="og:title" content="How it works | NYNZ"><meta property="og:description" content="How the free read-only health audit works, what the detailed audit adds, and how monitoring (early access) keeps every change behind your approval.">
 <meta property="og:image" content="https://nynz.in/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="favicon.ico" sizes="32x32"><link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -15,60 +15,59 @@
 <meta name="theme-color" content="#0A1A2F">
 <meta name="robots" content="index,follow">
 
-<link rel="preload" href="fonts/source-serif-4-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/ibm-plex-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/ibm-plex-sans-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="styles.css">
+<script src="nav.js"></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header"><div class="wrap">
-<a class="brand" href="index.html"><img src="img/nynz-logo-horizontal-dark.svg" alt="NYNZ home" width="76" height="28"></a>
-<nav class="nav" aria-label="Main"><ul><li><a href="how-it-works.html" aria-current=page>How it works</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="faq.html">FAQ</a></li><li><a class="btn" href="health-check.html">Free health check</a></li></ul></nav>
+<a class="brand" href="index.html"><img src="img/nynz-logo-dark.svg" alt="NYNZ home" width="136" height="44"></a>
+<button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+<nav class="nav" id="nav" aria-label="Main"><ul><li><a href="how-it-works.html" aria-current=page>How it works</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="about.html">About</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li><li><a class="btn" href="mailto:sales@nynz.in?subject=Free%20catalogue%20health%20audit&amp;body=Hello%2C%0A%0AI%20would%20like%20the%20free%20health%20audit.%0A%0AName%3A%0AStore%20website%20or%20link%3A%0APlatform%20(for%20example%20Shopify)%3A%0ACountry%3A%0AWhere%20you%20sell%20(for%20example%20Google%20Merchant%20Center%2C%20eBay%2C%20other)%3A%0A%0AI%20can%20share%3A%20a%20product%20export%20%2F%20a%20feed%20file%20%2F%20just%20my%20store%20link%0A%0APlease%20do%20not%20send%20passwords%20or%20store%20access.%20We%20do%20not%20need%20them%20at%20this%20stage.%0A">Free health audit</a></li></ul></nav>
 </div></header>
 <main id="main">
-<section class="hero"><div class="wrap"><p class="eyebrow">How it works</p><h1>A clear process, with your approval before anything goes live.</h1>
-<p class="lead">Software and AI do the finding, drafting and checking. A separate automated checker verifies every proposal. You approve every change before it goes live on your store.</p></div></section>
-<section><div class="wrap">
-<ol class="steps">
-<li><div><h2 class="step-title">Set up</h2><p>You share a product export or limited staff access, your supplier stock files and the feeds you sell through. We propose a one-time cleanup for your approval, then agree who on your side approves changes.</p></div></li>
-<li><div><h2 class="step-title">Detect</h2><p>Each week we read the catalogue and feed error reports and sort every problem by type: missing barcodes, broken variants, price mismatches, policy words, stock that is out but still on sale.</p></div></li>
-<li><div><h2 class="step-title">Propose</h2><p>Software and AI draft each fix as a single change with the old value, the new value, the evidence used and how confident the match is. Nothing is applied automatically.</p></div></li>
-<li><div><h2 class="step-title">Independent check</h2><p>A separate checking agent tests every proposal. The agent that drafts a fix never approves it. Fixed rules check that each change is well formed. For prices, stock, SKUs, barcodes and product identity, a change needs authoritative evidence, such as your supplier file or your own records. Without it, the item is flagged for you and no fix is proposed.</p></div></li>
-<li><div><h2 class="step-title">Your approval</h2><p>We send you the change set through the approval method in your agreement: the review queue, a shared sheet or email. You approve or reject each change, or approve a whole change set you have seen. Silence is not approval, and without your approval nothing is published.</p></div></li>
-<li><div><h2 class="step-title">Publish and check</h2><p>Only the changes you approved are published, with a saved copy of the previous state. We then re-run the checks to see whether the error count went down, and flag anything that did not improve.</p></div></li>
-<li><div><h2 class="step-title">Monthly report</h2><p>You get a one-page summary: problems found, changes made, items waiting on you, and anything we could not fix. Any batch can be rolled back.</p></div></li>
-</ol></div></section>
-<section><div class="wrap split">
-<div><p class="eyebrow">Example</p><h2>What a change looks like.</h2><p>An illustration using made-up products. Every change is shown to you this way, and nothing is published until you approve it.</p></div>
-<div class="table-scroll" tabindex="0" role="region" aria-label="Example review queue"><table>
-<caption class="eyebrow" style="text-align:left;caption-side:top;padding-bottom:.5rem">Example review queue (illustrative data)</caption>
-<thead><tr><th scope="col">Product</th><th scope="col">Field</th><th scope="col">Before</th><th scope="col">After</th><th scope="col">Route</th></tr></thead>
-<tbody>
-<tr><td>Canvas Tote, Navy</td><td>Title</td><td class="diff-old">CANVAS TOTE!!</td><td class="diff-new">Canvas Tote</td><td>Low risk, you can approve in bulk</td></tr>
-<tr><td>Steel Bottle, L</td><td>Stock</td><td class="diff-old">14</td><td class="diff-new">0</td><td>Match confirmed by barcode, needs your approval</td></tr>
-<tr><td>Linen Shirt, M</td><td>Price</td><td class="diff-old">$4,250.00</td><td class="diff-new">$42.50</td><td>Needs your approval</td></tr>
-<tr><td>Herbal Tea</td><td>Description</td><td class="diff-old">"cures anxiety"</td><td class="diff-new">(removed)</td><td>Flagged, needs your approval</td></tr>
-</tbody></table></div>
+<section class="hero page on-navy"><div class="wrap"><p class="eyebrow">How it works</p><h1>Audit first. Changes only if you ask, and only with your approval.</h1>
+<p class="lead">The free health audit is read-only. Software and AI read the data you share and report what they find. Nothing is changed or published in your store.</p><div class="actions"><a class="btn " href="mailto:sales@nynz.in?subject=Free%20catalogue%20health%20audit&amp;body=Hello%2C%0A%0AI%20would%20like%20the%20free%20health%20audit.%0A%0AName%3A%0AStore%20website%20or%20link%3A%0APlatform%20(for%20example%20Shopify)%3A%0ACountry%3A%0AWhere%20you%20sell%20(for%20example%20Google%20Merchant%20Center%2C%20eBay%2C%20other)%3A%0A%0AI%20can%20share%3A%20a%20product%20export%20%2F%20a%20feed%20file%20%2F%20just%20my%20store%20link%0A%0APlease%20do%20not%20send%20passwords%20or%20store%20access.%20We%20do%20not%20need%20them%20at%20this%20stage.%0A">Get your free health audit</a></div></div></section>
+<section class="section"><div class="wrap grid gutter-m">
+<div class="c-5"><p class="eyebrow">The audit</p><h2>From your export to a summary of findings.</h2><p class="lead" style="margin-top:16px">Free, read-only and the same for India and international stores.</p></div>
+<div class="c-7"><ol class="vsteps">
+<li><h3>Share</h3><p>Email us your store link, platform and country. Add a product export or a feed file if you have one (for Shopify, a CSV from admin). Please do not send passwords. We do not ask for store access at this stage.</p></li>
+<li><h3>We read</h3><p>Software and AI read what you shared, and your public store pages where that helps, and sort every problem by type: missing barcodes, broken variants, titles feeds would flag, price or stock mismatches against a supplier file you share.</p></li>
+<li class="gate"><h3>Summary of findings</h3><p>You get a short report: counts by problem type, examples from your own data, and what the data you shared did not let us check. It is free, and nothing is changed or published.</p></li>
+<li><h3>Detailed audit (optional)</h3><p>The detailed audit lists each problem with a proposed fix and the evidence for it. It is still read-only. In India it costs ₹1,999 + GST. For international stores it is early access, with pricing confirmed after your free audit.</p></li>
+</ol></div></div></section>
+<section class="section paper"><div class="wrap">
+<div class="showcase"><div class="txt"><p class="eyebrow">Detailed audit</p><h2>Every problem, with a proposed fix and its evidence.</h2><p>Each row says what field is affected, what it is now, what it would become and the evidence behind it. Where there is no evidence, the item is flagged rather than guessed.</p></div>
+<div class="vis"><figure class="mock"><div class="mock-bar" aria-hidden="true"><i></i><i></i><i></i><b>NYNZ detailed audit</b></div><div class="mock-body"><div class="mock-title"><div><p class="mh">Detailed audit: proposed fixes</p><p>Proposed only. Nothing is applied to your store.</p></div><span class="badge early">Example data</span></div><table class="dtable"><thead><tr><th scope="col">Product</th><th scope="col" class="hide-s">Field</th><th scope="col">Found</th><th scope="col">Proposed</th><th scope="col" class="hide-s">Evidence</th></tr></thead><tbody><tr><td><span class="pname">Example Canvas Tote</span></td><td class="hide-s">Title</td><td><span class="old">CANVAS TOTE!!</span></td><td><span class="new">Canvas Tote</span></td><td class="hide-s">Style rule</td></tr><tr><td><span class="pname">Example Steel Bottle, L</span></td><td class="hide-s">Stock</td><td><span class="old">14</span></td><td><span class="new">0</span></td><td class="hide-s">Barcode match to supplier file</td></tr><tr><td><span class="pname">Example Linen Shirt, M</span></td><td class="hide-s">Price</td><td><span class="old">4,250.00</span></td><td><span class="new">42.50</span></td><td class="hide-s">Supplier file</td></tr><tr><td><span class="pname">Example Herbal Tea</span></td><td class="hide-s">Description</td><td><span class="old">cures anxiety</span></td><td><span class="new">(remove)</span></td><td class="hide-s">Flagged: no evidence, needs your decision</td></tr></tbody></table></div><figcaption class="mock-cap" style="padding:0 20px 14px;margin:0">Illustration with made-up example data. Not a real store.</figcaption></figure></div></div>
 </div></section>
-<section><div class="wrap split"><div><p class="eyebrow">Safeguards</p><h2>Built to be undone.</h2></div>
-<ul class="list">
-<li><strong>Nothing auto-applied</strong>Every change waits for your approval, given in the review queue, a shared sheet or by email. Low-confidence matches and destructive changes are flagged for extra care.</li>
-<li><strong>Two keys for stock</strong>A supplier stock update is only proposed when the SKU match is confirmed by barcode or product title. Uncertain matches are flagged, and you still approve every update.</li>
-<li><strong>Rollback</strong>Every published batch keeps the previous state so it can be restored.</li>
-<li><strong>Honest limits</strong>Automated checks can be wrong. That is why you approve every change, why uncertain items are flagged instead of fixed, and why every batch can be rolled back.</li>
-<li><strong>Limited access</strong>We work from exports or restricted staff accounts, never full owner access.</li>
-</ul></div></section>
-<section><div class="wrap"><h2>See it on your own data.</h2><div class="actions"><a class="btn" href="health-check.html">Request a free health check</a></div></div></section>
+<section class="section"><div class="wrap">
+<div class="section-head"><p class="eyebrow">Monitoring &middot; early access</p><h2>If you want ongoing care, every change still waits for you.</h2><p>Monitoring is an early access service, and our process has been tested only on example data in a local test, not on a live store. Pricing is confirmed after your free audit.</p></div>
+<ol class="pipeline "><li class=""><h3>Detect</h3><p>Read the catalogue and feed errors and sort problems by type.</p></li><li class=""><h3>Propose</h3><p>Draft one fix per problem, with old value, new value and evidence.</p></li><li class=""><h3>Independent check</h3><p>A separate checker tests every proposal. It never checks its own work.</p></li><li class="gate"><h3>Your approval</h3><p>You approve or reject. Nothing goes live without it.</p></li><li class=""><h3>Publish and verify</h3><p>Publish approved changes, save the previous state, re-check.</p></li></ol>
+<div class="showcase flip" style="margin-top:96px"><div class="txt"><p class="eyebrow">Your decision</p><h2>You choose what goes live.</h2><p>Select the changes you accept. Flagged items stay out until you decide. Publishing saves the previous state first, so a batch can be restored. Silence is never approval.</p></div>
+<div class="vis"><figure class="mock"><div class="mock-bar" aria-hidden="true"><i></i><i></i><i></i><b>NYNZ review screen</b></div><div class="mock-body"><div class="mock-title"><div><p class="mh">Change set 14</p><p>Waiting for your approval</p></div><span class="badge early">Example data</span></div><div class="row approve"><span class="tick on" aria-hidden="true"></span><span><span class="pname">Example Canvas Tote</span><span class="sku">EX-1001</span></span><span class="chg"><span class="fld">Title</span><span class="old">CANVAS TOTE!!</span><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M2 7h9M7.5 3.5L11 7l-3.5 3.5"/></svg><span class="new">Canvas Tote</span></span><span class="badge ok">Check passed</span></div><div class="row approve"><span class="tick on" aria-hidden="true"></span><span><span class="pname">Example Steel Bottle, L</span><span class="sku">EX-1042</span></span><span class="chg"><span class="fld">Stock</span><span class="old">14</span><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M2 7h9M7.5 3.5L11 7l-3.5 3.5"/></svg><span class="new">0</span></span><span class="badge ok">Barcode match</span></div><div class="row approve"><span class="tick on" aria-hidden="true"></span><span><span class="pname">Example Linen Shirt, M</span><span class="sku">EX-1077</span></span><span class="chg"><span class="fld">Price</span><span class="old">4,250.00</span><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M2 7h9M7.5 3.5L11 7l-3.5 3.5"/></svg><span class="new">42.50</span></span><span class="badge ok">Supplier file</span></div><div class="row approve"><span class="tick" aria-hidden="true"></span><span><span class="pname">Example Herbal Tea</span><span class="sku">EX-1103</span></span><span class="chg"><span class="fld">Description</span><span class="old">cures anxiety</span><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M2 7h9M7.5 3.5L11 7l-3.5 3.5"/></svg><span class="new">(removed)</span></span><span class="badge warn">Flagged</span></div></div><div class="mock-foot"><p>3 of 4 selected. Nothing is published until you approve. The previous state is saved.</p><span><span class="mbtn">Reject</span> <span class="mbtn p">Approve 3 changes</span></span></div><figcaption class="mock-cap" style="padding:0 20px 14px;margin:0">Illustration with made-up example data. Not a real store.</figcaption></figure></div></div>
+</div></section>
+<section class="section paper"><div class="wrap">
+<div class="section-head"><p class="eyebrow">Safeguards</p><h2>Built to change nothing without you.</h2></div>
+<div class="cards five">
+<div class="card"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 018 0v3"/></svg></span><h3>The audit is read-only</h3><p>It reads what you share. It does not edit, publish or delete anything in your store.</p></div>
+<div class="card"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/></svg></span><h3>Evidence or a flag</h3><p>A fix for price, stock, SKU or barcode needs evidence such as your supplier file. Without it, the item is flagged.</p></div>
+<div class="card"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z"/><path d="M8.5 12l2.5 2.5L15.5 10"/></svg></span><h3>A separate checker</h3><p>In monitoring, a separate automated checker tests each proposal. It never checks its own work.</p></div>
+<div class="card"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 7L4 12l5 5"/><path d="M4 12h10a6 6 0 010 12" transform="translate(0 -6)"/></svg></span><h3>Rollback</h3><p>In monitoring, every published batch keeps the previous state so it can be restored.</p></div>
+<div class="card"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M10 12h5M10 16h5"/></svg></span><h3>Honest limits</h3><p>Automated findings can be wrong. Look at each example, and tell us if something is off.</p></div>
+</div></div></section>
+<section class="cta on-navy"><div class="wrap"><div class="t"><h2>See it on your own data.</h2><p>The free audit needs a store link and, ideally, a product export.</p></div><div class="a"><a class="btn" href="mailto:sales@nynz.in?subject=Free%20catalogue%20health%20audit&amp;body=Hello%2C%0A%0AI%20would%20like%20the%20free%20health%20audit.%0A%0AName%3A%0AStore%20website%20or%20link%3A%0APlatform%20(for%20example%20Shopify)%3A%0ACountry%3A%0AWhere%20you%20sell%20(for%20example%20Google%20Merchant%20Center%2C%20eBay%2C%20other)%3A%0A%0AI%20can%20share%3A%20a%20product%20export%20%2F%20a%20feed%20file%20%2F%20just%20my%20store%20link%0A%0APlease%20do%20not%20send%20passwords%20or%20store%20access.%20We%20do%20not%20need%20them%20at%20this%20stage.%0A">Get your free health audit</a></div></div></section>
 
 </main>
 <footer class="site-footer"><div class="wrap">
-<div class="cols">
-<div><img src="img/nynz-logo-horizontal-dark.svg" alt="NYNZ" width="65" height="24"><p>Catalogue and feed care for Shopify stores.</p><p><a href="mailto:sales@nynz.in">sales@nynz.in</a></p></div>
-<nav aria-label="Footer"><ul><li><a href="how-it-works.html">How it works</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="faq.html">FAQ</a></li><li><a href="health-check.html">Free health check</a></li></ul></nav>
-<nav aria-label="Legal"><ul><li><a href="privacy.html">Privacy (draft)</a></li><li><a href="terms.html">Website terms (draft)</a></li><li><a href="brand.html">Brand</a></li></ul></nav>
+<div class="top">
+<div class="about"><img src="img/nynz-logo-dark.svg" alt="NYNZ" width="136" height="44"><p>Catalogue and feed care for Shopify stores. Early access.</p><p><a href="mailto:sales@nynz.in">sales@nynz.in</a></p></div>
+<nav aria-label="Product"><h2>Product</h2><ul><li><a href="how-it-works.html">How it works</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="health-check.html">Free health audit</a></li><li><a href="faq.html">FAQ</a></li></ul></nav>
+<nav aria-label="Company"><h2>Company</h2><ul><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+<nav aria-label="Legal"><h2>Legal</h2><ul><li><a href="privacy.html">Privacy (draft)</a></li><li><a href="terms.html">Website terms (draft)</a></li></ul></nav>
 </div>
-<p class="small">&copy; 2026 NYNZ. Shopify, Google Merchant Center and eBay are trademarks of their owners. NYNZ is not affiliated with them.</p>
+<div class="legal"><p>&copy; 2026 NYNZ. Shopify, Google Merchant Center and eBay are trademarks of their owners. NYNZ is not affiliated with them.</p><p>Screens shown on this site are illustrations with made-up example data.</p></div>
 </div></footer>
-
 </body>
 </html>

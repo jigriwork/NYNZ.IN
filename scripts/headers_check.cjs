@@ -1,7 +1,7 @@
 // Loads every page with the exact headers from vercel.json applied and fails on any CSP violation, console error or failed asset request.
 // Also checks the header set is present and the redirect rule targets the apex.
 const { chromium } = require('playwright'); const fs = require('fs'), path = require('path'); const { start } = require('./mock_server.cjs');
-const pages = ['index', 'how-it-works', 'pricing', 'health-check', 'faq', 'privacy', 'terms', 'brand'];
+const pages = ['index', 'how-it-works', 'pricing', 'health-check', 'faq', 'about', 'contact', 'privacy', 'terms'];
 (async () => {
   const m = await start(0, { vercelHeaders: true }); const b = await chromium.launch(); let bad = 0;
   const vj = JSON.parse(fs.readFileSync(path.join(__dirname, '../vercel.json'), 'utf8'));
@@ -18,5 +18,5 @@ const pages = ['index', 'how-it-works', 'pricing', 'health-check', 'faq', 'priva
     for (const k of must) if (!h[k.toLowerCase()]) { issues.push('response lacks ' + k); }
     if (issues.length) { bad += issues.length; console.log(w.w, issues.join('\n')); } await ctx.close();
   }
-  console.log(bad ? 'headers check: FAIL' : 'headers check: PASS (8 pages x 2 viewports, no CSP violations, all headers present)'); await b.close(); m.srv.close(); process.exit(bad ? 1 : 0);
+  console.log(bad ? 'headers check: FAIL' : 'headers check: PASS (9 pages x 2 viewports, no CSP violations, all headers present)'); await b.close(); m.srv.close(); process.exit(bad ? 1 : 0);
 })();

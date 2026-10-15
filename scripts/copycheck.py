@@ -1,6 +1,6 @@
 """Fails if published copy contains em/en dashes, banned AI phrasing or emoji."""
 import re, glob, sys
-BANNED = ["unlock","seamless","elevate","fast-paced","in today's","empower","leverage","cutting-edge","game-chang","supercharg","revolutioni","effortless","delve","robust","harness","next-level","world-class","synerg","streamline","journey","tailored","best-in-class","guarantee results","100%"]
+BANNED = ["amazon.in","flipkart","human review","india lite","india pro","$"] + ["unlock","seamless","elevate","fast-paced","in today's","empower","leverage","cutting-edge","game-chang","supercharg","revolutioni","effortless","delve","robust","harness","next-level","world-class","synerg","streamline","journey","tailored","best-in-class","guarantee results","100%"]
 EMOJI = re.compile("[\U0001F300-\U0001FAFF\u2600-\u27BF\U0001F000-\U0001F2FF]")
 bad = 0
 for f in sorted(glob.glob("public/*.html")) + ["scripts/og.html"]:

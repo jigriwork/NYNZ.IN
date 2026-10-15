@@ -4,7 +4,7 @@ const axeSrc = require('fs').readFileSync(require.resolve('axe-core/axe.min.js')
 const http = require('http'), fs = require('fs'), path = require('path');
 const root = path.resolve(__dirname, '..'), pub = path.join(root, 'public');
 const types = { '.html': 'text/html', '.css': 'text/css', '.svg': 'image/svg+xml', '.png': 'image/png', '.woff2': 'font/woff2', '.ico': 'image/x-icon', '.webmanifest': 'application/manifest+json' };
-const pages = ['index', 'how-it-works', 'pricing', 'health-check', 'faq', 'privacy', 'terms', 'brand'];
+const pages = ['index', 'how-it-works', 'pricing', 'health-check', 'faq', 'about', 'contact', 'privacy', 'terms'];
 const { start } = require('./mock_server.cjs');
 (async () => {
   const m = await start(0); const srv = m.srv;

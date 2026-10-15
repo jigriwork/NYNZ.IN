@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Free catalogue health check | NYNZ</title>
-<meta name="description" content="Send a Shopify product export and get a free report of the catalogue problems we find, grouped by type.">
+<title>Free catalogue health audit | NYNZ</title>
+<meta name="description" content="A free, read-only audit of your product catalogue: a summary of findings with examples from your data. India and international. We change nothing in your store.">
 <link rel="canonical" href="https://nynz.in/health-check">
-<meta property="og:type" content="website"><meta property="og:site_name" content="NYNZ">
-<meta property="og:title" content="Free catalogue health check | NYNZ"><meta property="og:description" content="Send a Shopify product export and get a free report of the catalogue problems we find, grouped by type.">
+<meta property="og:type" content="website"><meta property="og:site_name" content="NYNZ"><meta property="og:url" content="https://nynz.in/health-check">
+<meta property="og:title" content="Free catalogue health audit | NYNZ"><meta property="og:description" content="A free, read-only audit of your product catalogue: a summary of findings with examples from your data. India and international. We change nothing in your store.">
 <meta property="og:image" content="https://nynz.in/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="favicon.ico" sizes="32x32"><link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -15,38 +15,55 @@
 <meta name="theme-color" content="#0A1A2F">
 <meta name="robots" content="index,follow">
 
-<link rel="preload" href="fonts/source-serif-4-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/ibm-plex-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/ibm-plex-sans-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="styles.css">
+<script src="nav.js"></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header"><div class="wrap">
-<a class="brand" href="index.html"><img src="img/nynz-logo-horizontal-dark.svg" alt="NYNZ home" width="76" height="28"></a>
-<nav class="nav" aria-label="Main"><ul><li><a href="how-it-works.html">How it works</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="faq.html">FAQ</a></li><li><a class="btn" href="health-check.html" aria-current=page>Free health check</a></li></ul></nav>
+<a class="brand" href="index.html"><img src="img/nynz-logo-dark.svg" alt="NYNZ home" width="136" height="44"></a>
+<button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+<nav class="nav" id="nav" aria-label="Main"><ul><li><a href="how-it-works.html">How it works</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="about.html">About</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li><li><a class="btn" href="mailto:sales@nynz.in?subject=Free%20catalogue%20health%20audit&amp;body=Hello%2C%0A%0AI%20would%20like%20the%20free%20health%20audit.%0A%0AName%3A%0AStore%20website%20or%20link%3A%0APlatform%20(for%20example%20Shopify)%3A%0ACountry%3A%0AWhere%20you%20sell%20(for%20example%20Google%20Merchant%20Center%2C%20eBay%2C%20other)%3A%0A%0AI%20can%20share%3A%20a%20product%20export%20%2F%20a%20feed%20file%20%2F%20just%20my%20store%20link%0A%0APlease%20do%20not%20send%20passwords%20or%20store%20access.%20We%20do%20not%20need%20them%20at%20this%20stage.%0A">Free health audit</a></li></ul></nav>
 </div></header>
 <main id="main">
-<section class="hero"><div class="wrap split">
-<div><p class="eyebrow">Free health check</p><h1>Find out what is wrong with your catalogue.</h1>
-<p class="lead">Tell us about your store. We will reply by email and ask for a product export. You get back a short report of the problems we find, grouped by type, with no obligation.</p>
-<ul class="list"><li><strong>No store access</strong>A CSV export from Shopify admin is enough.</li><li><strong>What you receive</strong>Counts by problem type and examples from your own data.</li><li><strong>What it is not</strong>An audit of your theme, ads or marketplace account health.</li></ul></div>
-<div class="card">
-<h2 style="font-size:var(--t-lg)">Request a health check</h2>
-<p>Email us and we will reply and ask for a product export.</p>
-<a class="btn" href="mailto:sales@nynz.in?subject=Free%20catalogue%20health%20check&amp;body=Name%3A%0AStore%20website%3A%0AApproximate%20number%20of%20products%20and%20variants%3A%0AWhere%20you%20sell%20(Google%20Merchant%20Center%2C%20eBay%2C%20other)%3A%0AAnything%20we%20should%20know%3A%0A">Email sales@nynz.in</a>
-<p>Please include your name, store website, roughly how many products and variants you have, and where you sell.</p>
-<p class="hint">We use these details only to reply and prepare your health check. When we ask for an export, send product data only, never customer or order data. See our <a href="privacy.html">privacy policy (draft)</a>. Or write to <a href="mailto:sales@nynz.in">sales@nynz.in</a>.</p>
+<section class="hero page on-navy"><div class="wrap grid center gutter-m">
+<div class="c-6"><p class="eyebrow">Free health audit</p><h1>Find out what is wrong with your catalogue.</h1>
+<p class="lead">Email us your store link and country, and share a product export if you have one. We reply with a summary of what we found. It is free, read-only, and for India and international stores.</p>
+<div class="actions"><a class="btn " href="mailto:sales@nynz.in?subject=Free%20catalogue%20health%20audit&amp;body=Hello%2C%0A%0AI%20would%20like%20the%20free%20health%20audit.%0A%0AName%3A%0AStore%20website%20or%20link%3A%0APlatform%20(for%20example%20Shopify)%3A%0ACountry%3A%0AWhere%20you%20sell%20(for%20example%20Google%20Merchant%20Center%2C%20eBay%2C%20other)%3A%0A%0AI%20can%20share%3A%20a%20product%20export%20%2F%20a%20feed%20file%20%2F%20just%20my%20store%20link%0A%0APlease%20do%20not%20send%20passwords%20or%20store%20access.%20We%20do%20not%20need%20them%20at%20this%20stage.%0A">Get your free health audit</a></div><div class="meta"><span class="badge early">Example report shown</span></div></div>
+<div class="c-6 mock-wrap"><figure class="mock"><div class="mock-bar" aria-hidden="true"><i></i><i></i><i></i><b>NYNZ free health audit</b></div><div class="mock-body"><div class="mock-title"><div><p class="mh">Free health audit: summary of findings</p><p>Read-only. Issues grouped by type.</p></div><span class="badge early">Example data</span></div><div class="kpis"><div class="kpi"><b>412</b><span>Products read</span></div><div class="kpi"><b>87</b><span>Issues found</span></div><div class="kpi"><b>6</b><span>Issue types</span></div></div><div class="bars"><div class="bar-row"><span>Missing barcodes (GTIN)</span><span class="n">31</span><div class="bar hi"><span style="width:100%"></span></div></div><div class="bar-row"><span>Titles with stray capitals or symbols</span><span class="n">22</span><div class="bar"><span style="width:71%"></span></div></div><div class="bar-row"><span>Price differs from supplier file</span><span class="n">14</span><div class="bar"><span style="width:45%"></span></div></div><div class="bar-row"><span>Out of stock but still on sale</span><span class="n">9</span><div class="bar"><span style="width:29%"></span></div></div><div class="bar-row"><span>Feed items rejected</span><span class="n">7</span><div class="bar"><span style="width:23%"></span></div></div><div class="bar-row"><span>Duplicate listings</span><span class="n">4</span><div class="bar"><span style="width:13%"></span></div></div></div></div><figcaption class="mock-cap" style="padding:0 20px 14px;margin:0">Illustration with made-up example data. Not a real store.</figcaption></figure></div></div></section>
+<section class="section"><div class="wrap">
+<div class="section-head"><p class="eyebrow">What to expect</p><h2>Simple, free, and nothing changes in your store.</h2></div>
+<div class="cards">
+<div class="card"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M10 12h5M10 16h5"/></svg></span><h3>What you get</h3><p>A summary of findings: counts by problem type, examples from your own data, and what the data you shared did not let us check.</p></div>
+<div class="card"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><h3>What we need</h3><p>Your store link or platform, your country, and ideally a product export or feed file. Passwords are never needed.</p></div>
+<div class="card"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 018 0v3"/></svg></span><h3>What we do not do</h3><p>We do not log in to your store, change anything or publish anything. No store access is requested at this stage.</p></div>
 </div></div></section>
+<section class="section paper"><div class="wrap grid gutter-m">
+<div class="c-5"><p class="eyebrow">What happens next</p><h2>You stay in control.</h2></div>
+<div class="c-7"><ol class="vsteps">
+<li><h3>You email us</h3><p>Use the button above. It opens an email with the details we need filled in as a template.</p></li>
+<li><h3>We reply</h3><p>We confirm what we need. For Shopify, a product CSV exported from admin is enough.</p></li>
+<li><h3>You get the summary</h3><p>We send the summary of findings. We cannot promise what an audit will find, and automated findings can be wrong.</p></li>
+<li><h3>You decide</h3><p>Nothing continues unless you ask. The detailed audit costs ₹1,999 + GST in India, and is early access with pricing confirmed after your free audit for international stores. Monitoring is early access, with pricing confirmed after your free audit.</p></li>
+</ol></div></div></section>
+<section class="section"><div class="wrap grid gutter-m">
+<div class="c-5"><p class="eyebrow">Not included</p><h2>What the audit is not.</h2></div>
+<div class="c-7"><ul class="checks no"><li>An audit of your theme, ads or marketplace account health</li><li>A promise that Google or a marketplace will approve a listing</li><li>Any change to your store</li></ul>
+<p class="hint" style="margin-top:24px">We use the details you send only to reply and prepare your audit. If we ask for an export, send product data only, never customer or order data. See our <a href="privacy.html">privacy policy (draft)</a>.</p></div>
+</div></section>
+<section class="cta on-navy"><div class="wrap"><div class="t"><h2>Ready for your free audit?</h2><p>One email is enough to start.</p></div><div class="a"><a class="btn" href="mailto:sales@nynz.in?subject=Free%20catalogue%20health%20audit&amp;body=Hello%2C%0A%0AI%20would%20like%20the%20free%20health%20audit.%0A%0AName%3A%0AStore%20website%20or%20link%3A%0APlatform%20(for%20example%20Shopify)%3A%0ACountry%3A%0AWhere%20you%20sell%20(for%20example%20Google%20Merchant%20Center%2C%20eBay%2C%20other)%3A%0A%0AI%20can%20share%3A%20a%20product%20export%20%2F%20a%20feed%20file%20%2F%20just%20my%20store%20link%0A%0APlease%20do%20not%20send%20passwords%20or%20store%20access.%20We%20do%20not%20need%20them%20at%20this%20stage.%0A">Get your free health audit</a></div></div></section>
 
 </main>
 <footer class="site-footer"><div class="wrap">
-<div class="cols">
-<div><img src="img/nynz-logo-horizontal-dark.svg" alt="NYNZ" width="65" height="24"><p>Catalogue and feed care for Shopify stores.</p><p><a href="mailto:sales@nynz.in">sales@nynz.in</a></p></div>
-<nav aria-label="Footer"><ul><li><a href="how-it-works.html">How it works</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="faq.html">FAQ</a></li><li><a href="health-check.html">Free health check</a></li></ul></nav>
-<nav aria-label="Legal"><ul><li><a href="privacy.html">Privacy (draft)</a></li><li><a href="terms.html">Website terms (draft)</a></li><li><a href="brand.html">Brand</a></li></ul></nav>
+<div class="top">
+<div class="about"><img src="img/nynz-logo-dark.svg" alt="NYNZ" width="136" height="44"><p>Catalogue and feed care for Shopify stores. Early access.</p><p><a href="mailto:sales@nynz.in">sales@nynz.in</a></p></div>
+<nav aria-label="Product"><h2>Product</h2><ul><li><a href="how-it-works.html">How it works</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="health-check.html">Free health audit</a></li><li><a href="faq.html">FAQ</a></li></ul></nav>
+<nav aria-label="Company"><h2>Company</h2><ul><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+<nav aria-label="Legal"><h2>Legal</h2><ul><li><a href="privacy.html">Privacy (draft)</a></li><li><a href="terms.html">Website terms (draft)</a></li></ul></nav>
 </div>
-<p class="small">&copy; 2026 NYNZ. Shopify, Google Merchant Center and eBay are trademarks of their owners. NYNZ is not affiliated with them.</p>
+<div class="legal"><p>&copy; 2026 NYNZ. Shopify, Google Merchant Center and eBay are trademarks of their owners. NYNZ is not affiliated with them.</p><p>Screens shown on this site are illustrations with made-up example data.</p></div>
 </div></footer>
-
 </body>
 </html>
