@@ -1,0 +1,2 @@
+# Cloudflare Pages redirects: none needed. Pages already serves /pricing for pricing.html and strips /index.html.
+# www -> apex is NOT done here (host-based rules are not supported in _redirects); use a Redirect Rule in the Cloudflare dashboard (see free-hosting-steps.md).

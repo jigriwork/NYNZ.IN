@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# nynz-site
 
-## Getting Started
+Static marketing site for NYNZ (nynz.in). Pure static files: no server code, no form backend, no secrets, no environment variables. Contact is by email (sales@nynz.in); the health-check page is a mailto link.
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Layout
+```
+build.py            generates public/ (pages, sitemap.xml, robots.txt) from templates and copy
+public/             build output, COMMITTED and deployed (CI fails if it is stale)
+public/_headers     Cloudflare Pages headers (kept equal to vercel.json by tests/host_config.test.cjs)
+vercel.json         Vercel: www -> apex redirect, security headers, cache rules
+scripts/            copy check, link check, axe accessibility QA, header/CSP check, local mock server
+tests/              host-config guards and tests of the (unused) form core
+lib/                form core used only by optional/ (not deployed, not referenced by any page)
+optional/form-backend/  DISABLED, unreferenced contact-form backend (Vercel api, Cloudflare functions, widget). Needs Resend/Turnstile/KV; not needed. Do not move back to the repo root without approval.
+docs/               hosting, rollback, analytics, access plan, approved process wording
+.github/            CI workflow, PR template
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Hosting (works on both; no environment variables needed)
+- **Vercel** (current plan, auto-deploy from `main`): Framework Other, Build `python3 build.py` (falls back to the committed `public/` if Python is missing), Output `public`. NOTE: Vercel Hobby is for non-commercial use only; NYNZ advertises a paid service, so a commercial-OK plan is needed. See `tech/readiness/free-hosting-steps.md`.
+- **Cloudflare Pages Free** (commercial use allowed): Framework None, Build command `python3 build.py` (or empty, `public/` is committed), Output `public`. `_headers` is applied; www -> apex is a dashboard Redirect Rule.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Branch and deploy flow
+1. Work on a branch, open a PR to `main`. CI (`.github/workflows/ci.yml`) must pass. Cloudflare Pages posts a Preview URL on the PR.
+2. Fill the PR checklist. Merge only when green and the preview is checked.
+3. Merge to `main` deploys to production. Nothing unfinished goes on `main`.
+4. Bad release: Cloudflare dashboard > Workers & Pages > project > Deployments > previous good deployment > Rollback to this deployment (verify the button name on first use), then fix forward with a revert PR. See docs/hosting.md.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+GitHub settings Adib must apply: protect `main` (require PR, require the `check` status, no force push, block direct pushes), and in Cloudflare Pages set `main` as the only Production branch.
 
-## Learn More
+## Local
+```
+npm install
+npx playwright install chromium
+npm run dev        # http://127.0.0.1:PORT with mock form backend (Turnstile token "mock-ok", mail goes to an in-memory outbox)
+npm run check      # build:check, copy check, link check, tests, axe, headers/CSP, form e2e
+```
+Requires Node 20+ (22 recommended) and Python 3.12.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Editing content
+Copy and page templates live in `build.py`. Edit, run `npm run build`, commit `public/` with it. Rules: no em dashes, no banned phrases, no claim that a person at NYNZ reviews changes, only tested integrations named, every figure labelled as a test result or assumption. See docs/process-wording.md.

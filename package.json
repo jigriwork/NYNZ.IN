@@ -1,26 +1,24 @@
 {
-  "name": "nynz.in",
-  "version": "0.1.0",
+  "name": "nynz-site",
+  "version": "1.0.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
+  "type": "module",
+  "description": "nynz.in marketing site: static pages built by build.py. No server code is deployed; the optional form backend lives in optional/ and is not used.",
+  "engines": {
+    "node": ">=20"
   },
-  "dependencies": {
-    "next": "16.1.6",
-    "react": "19.2.3",
-    "react-dom": "19.2.3"
+  "scripts": {
+    "build": "python3 build.py",
+    "build:check": "python3 build.py && git diff --exit-code -- public",
+    "dev": "node scripts/mock_server.cjs",
+    "lint": "python3 scripts/copycheck.py && node scripts/linkcheck.cjs",
+    "test": "node --test tests/",
+    "qa": "node scripts/qa.cjs",
+    "check": "npm run build:check && npm run lint && npm test && npm run qa && npm run qa:headers",
+    "qa:headers": "node scripts/headers_check.cjs"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "16.1.6",
-    "tailwindcss": "^4",
-    "typescript": "^5"
+    "axe-core": "^4.13.0",
+    "playwright": "^1.64.1"
   }
 }
